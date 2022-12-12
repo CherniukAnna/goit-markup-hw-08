@@ -1,0 +1,16 @@
+%header-link {
+    @extend .link;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+
+    color: var(--text-title-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+
+    @extend %transition-main;
+    transition-property: color;
+}

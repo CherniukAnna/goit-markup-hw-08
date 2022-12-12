@@ -1,0 +1,48 @@
+.container {
+    @extend .container;
+}
+.client {
+    &__title {
+        color: var(--title-text-color);
+        
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+}
+    &__link {
+        border: 1px solid var(--color-icon);
+        border-radius: 4px;
+
+        transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: var(--cubic);
+}
+    &__icon {
+        display: block;
+        padding: 16px 32px;
+        fill: var(--color-icon);
+
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: var(--cubic);
+}
+    &__link:hover,
+    &__link:focus {
+        border-color: var(--blue-color);
+    }
+    &__link:hover &__icon,
+    &__link:focus &__icon {
+        fill: var(--blue-color);
+}
+    &__icon:hover,
+    &__icon:focus {
+    fill: var(--blue-color);
+}
+}

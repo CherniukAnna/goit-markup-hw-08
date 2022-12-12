@@ -1,0 +1,110 @@
+// header
+.nav-container{
+    @extend .container;
+        display: flex;
+        align-items: center;
+        }
+    
+
+.header-portfolio {
+    border-bottom: 1px solid #ECECEC;
+}
+.site-nav {
+    display: flex;
+    align-items: center;
+    &__list {
+
+        display: flex;
+        align-items: center;
+        margin-left: 93px;
+        margin-left: auto;
+        gap: 50px;
+   }
+   &__link {
+    @extend .link;
+    position: relative;
+    
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        color: var(--title-text-color);
+        
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            text-decoration: none;
+        
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: var(--cubic);
+   }
+   .site-nav__link {
+    &:hover,
+    &:focus {
+            color: var(--blue-color);
+        }
+   }
+   .current::after {
+        position: absolute;
+        content: '';
+        display: block;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background-color: var(--blue-color);
+        border-radius: 2px;
+   }
+}
+
+.contact-wrap {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+&__list {
+   
+    display: flex;
+        align-items: center;
+        margin-left: 93px;
+        margin-left: auto;
+        gap: 50px;
+    }
+   &__item {
+    position: relative;
+    
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+   } 
+   &__contact {
+    color: var(--primary-text-color);
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        text-decoration: none;
+        transition: color 250ms var(--cubic);
+
+   }
+   &__contact:hover,
+   &__contact:focus {
+       color: var(--blue-color);
+   }
+   &__icon {
+    vertical-align: text-bottom;
+    margin-right: 10px;
+    fill: currentColor;
+   }
+}
+
+
+.nav-item>.link,
+.contacts-item>.link {
+    position: relative;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+

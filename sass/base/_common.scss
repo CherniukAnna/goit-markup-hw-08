@@ -1,0 +1,36 @@
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.stealth {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+.list {
+    list-style: none;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: color 250ms var(--cubic);
+
+}
+.section {
+    padding-bottom: 94px;
+}
