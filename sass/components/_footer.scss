@@ -10,7 +10,7 @@
         @media screen and(min-width: $tablet) {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
+                justify-content:space-around;
                 align-items: baseline;
             }
 
@@ -23,6 +23,8 @@
         
             @media screen and(min-width: $tablet) {
                 margin-right: 168px;
+               
+        
             }
         
             @media screen and(min-width: $desctop) {

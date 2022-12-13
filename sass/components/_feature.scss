@@ -20,6 +20,7 @@
         // margin: -15px;
     }
     &__item {
+        width: 100%;
     @media screen and (min-width: $tablet) {
         width: calc((100% - (30px*2))/2);
         margin: 15px;
@@ -40,6 +41,7 @@
     }
 }
     &__icon {
+        width: 100%;
         border-radius: 4px;
         padding: 25px 100px;
         margin-bottom: 30px;
