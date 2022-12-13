@@ -322,6 +322,7 @@ body.is-fixed {
 }
 
 .nav-site__container {
+  z-index: 9;
   transition-duration: 250ms;
   transition-timing-function: var(cubic);
   transition-property: transform;
@@ -718,6 +719,9 @@ body.is-fixed {
     flex-wrap: wrap;
     margin: -15px;
   }
+}
+.team__img {
+  width: 100%;
 }
 .team__title {
   color: var(--title-text-color);

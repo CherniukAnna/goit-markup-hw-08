@@ -59,10 +59,11 @@ body.is-fixed {
 
 .button-burger.is-open .button-burger__open {
     display: block;
+  
 }
 
 .nav-site__container {
-    // z-index: 9;
+    z-index: 9;
 
     @media screen and (max-width: $pretablet) {
         display: flex;
