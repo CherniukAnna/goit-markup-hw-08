@@ -19,7 +19,7 @@
 <header class="header">
     <!-- Навигация -->
     <div class="header__container">
-        <a class="logo" href="./index.html" lang="en"><span>Web</span>Studio</a>
+        <a class="logo" href="./index.html" lang="en">Web<span class="logo__accent">Studio</span></a>
 
         <button class="button-burger is-open" type="button" aria-expanded="false" data-menu-button>
             <svg class="button-burger__icon" width="40" height="40" aria-label="перемикач мобільного меню"
@@ -249,69 +249,71 @@
     </main>
     <footer class="footer">
         <div class="footer__block container">
-            <div class=" footer__box">
-                <a href="WebStudio" class="logo">Web<span class="footer__accent">Studio</span></a>
-                <address class="footer__text">
-                    <ul class="footer__list">
-                        <li class="footer__contact">
-                            <a href="https://www.google.com/maps/@34.6805606,33.0451237,15z?hl=ru" target="_blank"
-                                rel="noreferrer noopener" class="footer__address">м. Київ, пр-т Лесі Українки, 26</a>
+            <div class="footer__inline">
+                <div class="footer__box">
+                    <a href="WebStudio" class="logo">Web<span class="footer__accent">Studio</span></a>
+                    <address class="footer__text">
+                        <ul class="footer__list">
+                            <li class="footer__contact">
+                                <a href="https://www.google.com/maps/@34.6805606,33.0451237,15z?hl=ru" target="_blank"
+                                    rel="noreferrer noopener" class="footer__address">м. Київ, пр-т Лесі Українки, 26</a>
+                            </li>
+                            <li class="footer__contact">
+                                <a href="mailto:info@devstudio.com" class="footer__info">info@devstudio.com</a>
+                            </li>
+                            <li class="footer__contact">
+                                <a href="tel:+380961111111" class="footer__info">+380961111111</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer-join">
+                    <h2 class="footer-join__title">приєднуйтесь</h2>
+                    <ul class="footer-join__list">
+                        <li class="footer-join__item">
+                            <a href="" class="footer-join__link" target="_blank" rel="noreferrer noopener">
+                                <svg class="footer-join__icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="footer__contact">
-                            <a href="mailto:info@devstudio.com" class="footer__info">info@devstudio.com</a>
+                        <li class="footer-join__item">
+                            <a href="" class="footer-join__link" target="_blank" rel="noreferrer noopener">
+                                <svg class="footer-join__icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="footer__contact">
-                            <a href="tel:+380961111111" class="footer__info">+380961111111</a>
+                        <li class="footer-join__item">
+                            <a href="" class="footer-join__link" target="_blank" rel="noreferrer noopener">
+                                <svg class="footer-join__icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-join__item">
+                            <a href="" class="footer-join__link" target="_blank" rel="noreferrer noopener">
+                                <svg class="footer-join__icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-            <div class="footer-join footer__box">
-                <h2 class="footer-join__title">приєднуйтесь</h2>
-                <ul class="footer-join__list">
-                    <li class="footer-join__item">
-                        <a href="" class="footer-join__link link" target="_blank" rel="noreferrer noopener">
-                            <svg class="footer-join__icon" width="20" height="20">
-                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-join__item">
-                        <a href="" class="footer-join__link link" target="_blank" rel="noreferrer noopener">
-                            <svg class="footer-join__icon" width="20" height="20">
-                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-join__item">
-                        <a href="" class="footer-join__link link" target="_blank" rel="noreferrer noopener">
-                            <svg class="footer-join__icon" width="20" height="20">
-                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-join__item">
-                        <a href="" class="footer-join__link link" target="_blank" rel="noreferrer noopener">
-                            <svg class="footer-join__icon" width="20" height="20">
-                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <!-- Підписатися на розсилку -->
             <div class="footer-sub">
                 <h2 class="footer-sub__title">Підпишіться на розсилку</h2>
-                <form name="footer-sub__form">
-                    <div class="footer-sub__container">
-                        <label class="footer-sub__label">
-                            <input class="footer-sub__input" type="email" placeholder="E-mail" name="subscribe-email">
-                        </label>
-                        <button class="footer-sub__submit" type="submit">Підписатися
-                            <svg class="footer-sub__icon" width="24" height="24">
-                                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-                            </svg></button>
-                    </div>
+                <form class="footer-sub__form" name="footer-sub__form">
+                    <label class="footer-sub__label">
+                        <input class="footer-sub__input" type="email" placeholder="E-mail" name="subscribe-email" />
+                    </label>
+                    <button class="footer-sub__submit" type="submit">
+                        Підписатися
+                        <svg class="footer-sub__icon" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
                 </form>
             </div>
         </div>

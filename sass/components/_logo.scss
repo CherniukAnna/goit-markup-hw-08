@@ -3,7 +3,7 @@
             color: var(--blue-color);
     
             font-family: Raleway;
-    
+            
             font-size: 26px;
             line-height: 1.19;
             text-decoration: none;
@@ -17,9 +17,11 @@
                 }
             
                 @media screen and (min-width: $desctop) {
-                    margin-right: 93px;
+                    // margin-right: 93px;
                     font-size: 26px;
                     line-height: calc(31/26);
+                    text-align: start;
+
                 }
         
         &__accent {
