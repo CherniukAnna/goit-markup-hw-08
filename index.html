@@ -12,12 +12,20 @@
     <link rel="stylesheet" href="./css/main.min.css">
     
   </head>
-  <body>
+  <body data-body data-body-fixed>
     <!-- Шапка -->
     <header class="header">
       <div class="nav-container">
         <nav class="site-nav">
         <a href="./index.html" lang="en" class="logo">Web<span class="logo__accent">Studio</span></a>
+        <button class="button-burger is-open" type="button" aria-expanded="false" data-menu-button>
+          <svg class="button-burger__icon" width="40" height="40" aria-label="перемикач мобільного меню"
+            aria-controls="site-nav__container">
+            <use class="button-burger__open" href="./images/symbol-defs.svg#icon-menu_40px"></use>
+            <use class="button-burger__cross" href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="site-nav__container" id="site-nav__container" data-menu>
         <ul class="site-nav__list">
           <li class="site-nav__item"><a href="" class="site-nav__link current">Студія</a></li>
           <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
@@ -39,6 +47,7 @@
               </svg>+38 096 111 11 11</a>
           </li>
         </ul>
+      </div>
       </div>
     </div>
     </header>
@@ -474,6 +483,7 @@
     </form>
     </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

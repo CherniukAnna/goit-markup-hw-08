@@ -24,10 +24,29 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 500ms linear;
-    width: 528px;
-    height: 581px;
+    // width: 528px;
+    // height: 581px;
+    display: flex;
     border-radius: 4px;
     background-color: var(--white-color);
+
+    
+        @media screen and (max-width: $pretablet) {
+            width: 93%;
+            height: 609px;
+    
+        }
+    
+        @media screen and (min-width: $tablet) {
+            width: 450px;
+            height: 609px;
+        }
+    
+        @media screen and (min-width: $desctop) {
+            width: 528px;
+            height: 581px;
+        }
+    
     .backdrop.is-hidden > & {
     
             transform: translate(-50%, -50%) scale(1.5);
@@ -156,7 +175,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (min-width: $desctop) {
     padding-left: 12px;
+ }
 &__label {
     display: block;
 }
@@ -183,12 +204,20 @@
     
 }
 &__text {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     margin-left: 8px;
 
     color: var(--primary-text-color);
+    @media screen and (max-width: 466px) {
+            width: 250px;
+        }
+    
+    @media screen and (min-width: $desctop) {
+            font-size: 14px;
+            line-height: calc(24/14);
+        }
 
     & .checkbox__link {
         color: var(--blue-color);

@@ -1,3 +1,5 @@
+
+
 .container {
     @extend .container;
 }
@@ -10,13 +12,51 @@
         line-height: 1.17;
         text-align: center;
         margin-bottom: 50px;
+
+        // margin-bottom: 30px;
+        
+        // @media screen and (min-width: $desctop) {
+        //     margin-bottom: 30px;
+        // }
     }
 
     &__list {
         display: flex;
         justify-content: space-between;
+        margin: -15px;
+           
+            flex-wrap: wrap;
+            // margin: -15px;
+           
 }
+    &__item {
+        margin: 15px;
+        @media screen and (min-width: $mobile) {
+                display: flex;
+                flex-wrap: wrap;
+                // gap: 30px;
+        
+            }
+        
+            @media screen and (min-width: $tablet) {
+                display: flex;
+                flex-wrap: wrap;
+                // gap: 30px;
+            }
+        
+            @media screen and (min-width: $desctop) {
+                display: flex;
+                flex-wrap: nowrap;
+                // gap: 30px;
+            }
+    }
     &__link {
+       
+        // display: flex;
+        justify-content: center;
+        align-items: center;
+        // width: 210px;
+        // height: 92px;
         border: 1px solid var(--color-icon);
         border-radius: 4px;
 
@@ -25,8 +65,23 @@
         transition-timing-function: var(--cubic);
 }
     &__icon {
+        
+        @media screen and (min-width: $mobile) {
+            width: 210px;
+            height: 92px;
+        }
+        @media screen and (min-width: $tablet) {
+            width: 226px;
+            height: 92px;
+        }
+        @media screen and (min-width: $desctop) {
+            width: 170px;
+            height: 92px;
+        }
         display: block;
-        padding: 16px 32px;
+        width: 106px;
+        height: 60px;
+        // padding: 16px 32px;
         fill: var(--color-icon);
 
         transition-property: fill;
