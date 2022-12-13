@@ -1,5 +1,4 @@
 
-
 .container {
     @extend .container;
 }
@@ -12,47 +11,40 @@
         line-height: 1.17;
         text-align: center;
         margin-bottom: 50px;
-
-        // margin-bottom: 30px;
         
-        // @media screen and (min-width: $desctop) {
-        //     margin-bottom: 30px;
-        // }
+        @media screen and (min-width: $desctop) {
+            margin-bottom: 30px;
+        }
     }
 
     &__list {
         display: flex;
-        justify-content: space-between;
-        margin: -15px;
-           
+        // justify-content: space-between;
+        // margin: -15px;
+           gap: 30px;
             flex-wrap: wrap;
-            // margin: -15px;
+            
            
 }
     &__item {
-        margin: 15px;
-        @media screen and (min-width: $mobile) {
-                display: flex;
-                flex-wrap: wrap;
-                // gap: 30px;
+        // margin: 15px;
+
+    @media screen and (max-width: $pretablet) {
+        width: calc((100% - 30px)/2);
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 60px)/3);
+    }
+
+    @media screen and (min-width: $desctop) {
+        width: calc((100% - 150px)/6);
+    }
         
-            }
-        
-            @media screen and (min-width: $tablet) {
-                display: flex;
-                flex-wrap: wrap;
-                // gap: 30px;
-            }
-        
-            @media screen and (min-width: $desctop) {
-                display: flex;
-                flex-wrap: nowrap;
-                // gap: 30px;
-            }
     }
     &__link {
        
-        // display: flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         // width: 210px;

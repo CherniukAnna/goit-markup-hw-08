@@ -16,34 +16,67 @@
 
 <body>
     <!-- Шапка -->
-    <header class="header-portfolio">
-        <div class="nav-container">
-        <nav class="site-nav">
-            <a href="./index.html" lang="en" class="logo">Web<span class="logo__accent">Studio</span></a>
-            <ul class="site-nav__list">
-                <li class="site-nav__item"><a href="./index.html" class="site-nav__link ">Студія</a></li>
-                <li class="site-nav__item"><a href="" class="site-nav__link current">Портфоліо</a></li>
-                <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
-            </ul>
-        </nav>
-            <div class="contact-wrap">
-                <ul class="contact-wrap__list">
-                    <li class="contact-wrap__item">
-                        <a class="contact-wrap__contact" href="mailto:info@devstudio.com">
-                            <svg class="contact-wrap__icon" width="16" height="16">
-                                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                            </svg>info@devstudio.com</a>
+<header class="header">
+    <!-- Навигация -->
+    <div class="header__container">
+        <a class="logo" href="./index.html" lang="en"><span>Web</span>Studio</a>
+
+        <button class="button-burger is-open" type="button" aria-expanded="false" data-menu-button>
+            <svg class="button-burger__icon" width="40" height="40" aria-label="перемикач мобільного меню"
+                aria-controls="nav-site__container">
+                <use class="button-burger__open" href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                <use class="button-burger__cross" href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <div class="nav-site__container" id="nav-site__container" data-menu>
+            <nav class="nav-site">
+                <ul class="nav-site__list">
+                    <li class="nav-site__items">
+                        <a class="nav-site__link" href="./index.html">Студія</a>
                     </li>
-                    <li class="contact-wrap__item">
-                        <a class="contact-wrap__contact" href="tel:+380961111111">
-                            <svg class="contact-wrap__icon" width="10" height="16">
-                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                            </svg>+38 096 111 11 11</a>
+                    <li class="nav-site__items">
+                        <a class="nav-site__link nav-site__link--active" href="">Портфоліо</a>
+                    </li>
+                    <li class="nav-site__items">
+                        <a class="nav-site__link" href="">Контакти</a>
                     </li>
                 </ul>
-            </div>
-            </div>
-    </header>
+            </nav>
+            <!-- Контактная информация -->
+            <ul class="nav-contacts">
+
+                <li class="nav-contacts__items">
+                    <a class="nav-contacts__link" href="tel:+380961111111">
+                        <svg class="nav-contacts__icon" width="10" height="16">
+                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                        </svg><span>+38 096 111 11 11</span></a>
+                </li>
+                <li class="nav-contacts__items">
+                    <a class="nav-contacts__link" href="mailto:info@devstudio.com">
+                        <svg class="nav-contacts__icon" width="16" height="16">
+                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                        </svg><span>info@devstudio.com</span></a>
+                </li>
+            </ul>
+            <ul class="nav-social">
+                <li class="nav-social__items">
+                    <a href="" class="nav-social__link" target="_blank" rel="noreferrer noopener">Instagram</a>
+                </li>
+                <li class="nav-social__items">
+                    <a href="" class="nav-social__link" target="_blank" rel="noreferrer noopener">Twitter</a>
+                </li>
+                <li class="nav-social__items">
+                    <a href="" class="nav-social__link" target="_blank" rel="noreferrer noopener">Facebook</a>
+                </li>
+                <li class="nav-social__items">
+                    <a href="" class="nav-social__link" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</header>
     <main>
         <section class="main">
             <h1 class="main__hide stealth">Портфоліо</h1>

@@ -1,40 +1,38 @@
-
 // footer
- .footer {
+.footer {
     background-color: var(--hero-background-color);
 
     padding-top: 60px;
     padding-bottom: 60px;
 
-
     &__block {
         @extend .container;
-
         @media screen and(min-width: $tablet) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: baseline;
-        }
-    }
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: baseline;
+            }
 
-&__box:nth-child(2) {
-    width: 206px;
-    margin-left: 70px;
-
-    @media screen and(max-width: $predesctop) {
-        margin-bottom: 60px;
-        text-align: center;
     }
-
-    @media screen and(min-width: $tablet) {
-        margin-right: 168px;
+    &__box {
+        @media screen and(max-width: $predesctop) {
+                margin-bottom: 60px;
+                text-align: center;
+            }
+        
+            @media screen and(min-width: $tablet) {
+                margin-right: 168px;
+            }
+        
+            @media screen and(min-width: $desctop) {
+                margin-right: 70px;
+            }
     }
-
-    @media screen and(min-width: $desctop) {
-        margin-right: 70px;
+    &__box:nth-child(2) {
+        width: 206px;
+        margin-left: 70px;
     }
-}
 
     &__accent {
         color: var(--white-color);
@@ -91,8 +89,16 @@
 }
 
 // приеднуйтесь
-
 .footer-join {
+    text-align: center;
+    
+        @media screen and(max-width:$pretablet) {
+            margin-bottom: 60px;
+        }
+    
+        @media screen and(min-width: $desctop) {
+            margin-right: auto;
+        }
     &__title {
         margin-bottom: 20px;
 
@@ -150,7 +156,10 @@
 
 /* Пшдписатися на розсилку */
 .footer-sub {
-    margin-left: 93px;
+    @media screen and(max-width: $predesctop) {
+            text-align: center;
+        }
+    
 
     &__title {
         margin-bottom: 20px;
@@ -166,12 +175,20 @@
     }
 
     &__container {
-        display: flex;
+        @media screen and(min-width: $desctop) {
+        
+                display: flex;
+                align-items: flex-end;
+            }
     }
 
     &__input {
-        width: 358px;
-        height: 50px;
+        display: block;
+            width: 100%;
+            min-height: 50px;
+            margin-bottom: 20px;
+        // width: 358px;
+        // height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
         padding-left: 16px;
@@ -180,6 +197,17 @@
         line-height: calc(20/16);
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
+        @media screen and(min-width: $tablet) {
+                width: 450px;
+            }
+        
+        @media screen and(min-width: $desctop) {
+                width: 358px;
+        
+                margin-right: 12px;
+        
+                margin-bottom: 0;
+            }
 
         transition-property: outline, border-color;
         transition-duration: 250ms;
@@ -200,7 +228,7 @@
     }
 
     &__submit {
-        display: flex;
+        padding-top: 30px;
         align-items: center;
         justify-content: space-between;
 
@@ -232,4 +260,5 @@
             box-shadow: none;
         }
     }
+   
 }
