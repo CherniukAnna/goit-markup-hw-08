@@ -418,14 +418,6 @@ body.is-fixed {
   }
 }
 
-.nav-site__link {
-  transition-duration: 250ms;
-  transition-timing-function: var(cubic);
-  transition-property: color;
-}
-.nav-site__link:hover, .nav-site__link:focus {
-  color: var(--blue-color);
-}
 @media screen and (min-width: 768px) {
   .nav-site__link {
     display: block;
@@ -438,6 +430,12 @@ body.is-fixed {
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
+    transition-duration: 250ms;
+    transition-timing-function: var(cubic);
+    transition-property: color;
+  }
+  .nav-site__link:hover, .nav-site__link:focus {
+    color: var(--blue-color);
   }
 }
 
