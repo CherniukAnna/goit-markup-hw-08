@@ -19,6 +19,15 @@
     }
     &__img {
         width: 100%;
+        
+        @media screen and (min-width: $tablet){
+            width: 354px;
+            height: 374px;
+        }
+        @media screen and (min-width: $desctop){
+            width: 270px;
+            height: 260px;
+        }
          }
 
     &__title {
