@@ -418,6 +418,9 @@ body.is-fixed {
   }
 }
 
+.nav-site__link {
+  color: var(--title-text-color);
+}
 @media screen and (min-width: 768px) {
   .nav-site__link {
     display: block;
@@ -426,7 +429,7 @@ body.is-fixed {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: var(--text-title-color);
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;

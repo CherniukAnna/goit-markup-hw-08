@@ -1,146 +1,125 @@
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    max-width: 1600px;
-    margin: 0 auto;
+  max-width: 1600px;
+  margin: 0 auto;
 
-    background-color: var(--hero-background-color);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url(../images/bghero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+  background-color: var(--hero-background-color);
+  // background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+  //             rgba(47, 48, 58, 0.4)),
+  //         url(../images/bghero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 
-    padding-top: 118px;
-    padding-bottom: 118px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
-    @media screen and (min-width: $desctop) {
-        padding-top: 200px;
-        padding-bottom: 200px;
+  @media screen and (max-width: $pretablet) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-mob.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-mob@2x.jpg);
     }
+  }
 
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-tab.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-tab@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: $desctop) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-desk.jpg);
+
+    @media screen and (min-width: $desctop) and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-desk@2x.jpg);
+    }
+    @media screen and (min-width: $desctop) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+  }
 }
-
 .hero__title {
-    margin-bottom: 30px;
-    color: var(--white-color);
+  margin-bottom: 30px;
+  color: var(--white-color);
 
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: calc(42/26);
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: calc(42 / 26);
 
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 
-    @media screen and (min-width: $desctop) {
-        font-size: 44px;
-        line-height: 1.36;
-    }
-
+  @media screen and (min-width: $desctop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
-    padding: 10px 24px;
-    color: #ffffff;
-    background-color: var(--blue-color);
-    border-radius: 4px;
-    border: none;
+  padding: 10px 24px;
+  color: #ffffff;
+  background-color: var(--blue-color);
+  border-radius: 4px;
+  border: none;
 
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 
-    transition-duration: 250ms;
-    transition-timing-function: var(cubic);
-    transition-property: cursor;
+  transition-duration: 250ms;
+  transition-timing-function: var(cubic);
+  transition-property: cursor;
 
-    @media screen and (min-width: $desctop) {
-        padding: 10px 32px;
-    }
+  @media screen and (min-width: $desctop) {
+    padding: 10px 32px;
+  }
 
-    &:hover,
-    &:focus {
-        cursor: pointer;
-    }
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
-
-
-// // hero
-// .hero {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     // padding-top: 200px;
-//     // padding-bottom: 200px;
-    // background-color: var(--hero-background-color);
-   
-
-//     max-width: 1600px;
-//     margin: 0 auto;
-
-    // background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-    //         rgba(47, 48, 58, 0.4)),
-    //     url(../images/bghero.jpg);
-//     background-repeat: no-repeat;
-//     background-position: center;
-
-//     padding-top: 118px;
-//     padding-bottom: 118px;
-
-//     @media screen and (min-width: $desctop) {
-//         padding-top: 200px;
-//         padding-bottom: 200px;
-//     }
-//     &__title {
-//             color: var(--white-color);
-//             font-weight: 900;
-//             font-size: 44px;
-//             line-height: 1.36;
-//             text-transform: uppercase;
-//             letter-spacing: 0.06em;
-    
-//             margin-bottom: 30px;
-
-//             @media screen and (min-width: $desctop) {
-//                     font-size: 44px;
-//                     line-height: 1.36;
-//                 }
-//         }
-//     &__button {
-//         color: var(--white-color);
-//         background-color: var(--blue-color);
-        
-//         cursor: pointer;
-//         font-family: inherit;
-//         font-weight: 700;
-//         font-size: 16px;
-//         line-height: 1.88;
-//         // align-items: center;
-//         // text-align: center;
-        
-//         padding: 10px 32px;
-//         border-radius: 4px;
-//         border: none;
-
-//         @media screen and (min-width: $desctop) {
-//                 padding: 10px 32px;
-//             }
-        
-//         transition: background-color 250ms var(--cubic);
-//         &:hover,
-//         &:focus {
-//             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//             }
-//     }   
-        
-    
-// }
-

@@ -165,7 +165,7 @@ body.is-fixed {
 
 .nav-site__link {
     @extend .link;
-
+    color: var(--title-text-color);
     @media screen and (min-width: $tablet) {
 
         display: block;
@@ -174,9 +174,9 @@ body.is-fixed {
         display: block;
         padding-top: 32px;
         padding-bottom: 32px;
+        color: var(--title-text-color);
 
-
-        color: var(--text-title-color);
+        
 
         font-weight: 500;
         font-size: 14px;
@@ -343,6 +343,7 @@ body.is-fixed {
     }
 
     &__link {
+        
         @extend .link;
         color: var(--blue-color);
     }
