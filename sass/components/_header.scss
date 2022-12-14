@@ -168,7 +168,7 @@ body.is-fixed {
 
     &:hover,
     &:focus {
-        color: var(blue-color);
+        color: var(--blue-color);
     }
 
     @media screen and (min-width: $tablet) {

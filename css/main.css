@@ -424,7 +424,7 @@ body.is-fixed {
   transition-property: color;
 }
 .nav-site__link:hover, .nav-site__link:focus {
-  color: var(blue-color);
+  color: var(--blue-color);
 }
 @media screen and (min-width: 768px) {
   .nav-site__link {
