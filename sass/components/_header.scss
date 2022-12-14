@@ -301,10 +301,7 @@ body.is-fixed {
 }
 
 .nav-contacts__link {
-    @media screen and (min-width: $mobile){
-        width: 8vw;
-    }
-
+    
     @media screen and (min-width: $tablet) {
 
         font-weight: 500;
