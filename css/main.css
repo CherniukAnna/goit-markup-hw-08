@@ -225,7 +225,7 @@ section {
   clip: rect(0 0 0 0);
 }
 
-.list, .footer__list, .work__list, .nav-site__list {
+.list, .footer__list, .work__list, .nav-social, .nav-site__list {
   list-style: none;
 }
 
@@ -520,6 +520,11 @@ body.is-fixed {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .nav-contacts__link {
+    width: 8vw;
+  }
+}
 @media screen and (min-width: 768px) {
   .nav-contacts__link {
     font-weight: 500;
@@ -540,6 +545,8 @@ body.is-fixed {
 }
 
 .nav-social {
+  display: flex;
+  flex-wrap: wrap;
   display: flex;
 }
 @media screen and (min-width: 768px) {
@@ -568,6 +575,7 @@ body.is-fixed {
   background-color: var(--hero-background-color);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding-top: 118px;
   padding-bottom: 118px;
 }

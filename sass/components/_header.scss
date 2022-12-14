@@ -301,6 +301,10 @@ body.is-fixed {
 }
 
 .nav-contacts__link {
+    @media screen and (min-width: $mobile){
+        width: 8vw;
+    }
+
     @media screen and (min-width: $tablet) {
 
         font-weight: 500;
@@ -325,7 +329,9 @@ body.is-fixed {
 }
 
 .nav-social {
-   
+    @extend .list;
+    display: flex;
+        flex-wrap: wrap;
 
     @media screen and (min-width: $tablet) {
         display: none;
@@ -343,14 +349,11 @@ body.is-fixed {
     }
 
     &__link {
-        
         @extend .link;
         color: var(--blue-color);
     }
 
 }
-
-
 // // header
 // body.is-fixed {
 //     overflow: hidden;
