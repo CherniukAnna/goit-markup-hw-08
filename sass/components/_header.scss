@@ -328,7 +328,8 @@ body.is-fixed {
 .nav-social {
     @extend .list;
     display: flex;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 10px;
 
     @media screen and (min-width: $tablet) {
         display: none;
